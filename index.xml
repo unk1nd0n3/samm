@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OWASP SAMM</title>
+    <link>https://owaspsamm.org/</link>
+    <description>Recent content on OWASP SAMM</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://owaspsamm.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://owaspsamm.org/agile-guidance/placeholder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/agile-guidance/placeholder/</guid>
+      <description>placeholder for adding Agile implementation guidance as a parallel track to the core model</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://owaspsamm.org/answer-options/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/answer-options/</guid>
+      <description>SAMM_Questions_Answers
+SAMMQA-A: - No - Yes, it&amp;rsquo;s less than a year old - Yes, it&amp;rsquo;s a number of years old - Yes, it&amp;rsquo;s a pretty mature program
+SAMMQA-B: - No - Yes, some of them are aware - Yes, approx. half of them are aware - Yes, most of them are aware
+SAMMQA-C: - No - Yes, a small percentage are/do - Yes, at least half of them are/do - Yes, the majority of them are/do</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://owaspsamm.org/sitehome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/sitehome/</guid>
+      <description>The Software Assurance Maturity Model (SAMM) is an open framework to help organizations formulate and implement a strategy for software security that is tailored to the specific risks facing the organization. SAMM helps you:
+ Evaluate an organization’s existing software security practices Build a balanced software security assurance program in well-defined iterations Demonstrate concrete improvements to a security assurance program Define and measure security-related activities throughout an organization  SAMM 1.</description>
+    </item>
+    
+    <item>
+      <title>Architecture Assessment</title>
+      <link>https://owaspsamm.org/core/verification/v-architecture-assessment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/verification/v-architecture-assessment/</guid>
+      <description>Proposed Overview (updated objectives)     A: Architecture Validation B: Architecture Compliance     Maturity 1 - Review the architecture to ensure baseline mitigations are in place for known risks. Identify application and infrastructure architecture components Ad-hoc review of the architecture against compliance requirement   Maturity 2 - Review the complete provision of security mechanisms in the architecture Are the architecture security mechanisms well implemented Analyze the architecture against known security requirements and best practices   Maturity 3 - Review the architecture effectiveness and feedback results to improve the security architecture Review of the architecture components effectiveness Feedback the architecture review results into the enterprise architecture, organisation design principles &amp;amp; patterns, security solutions and reference architectures    Original Overview     A: Application Architecture B: Supporting Architecture     Maturity 1 - Support ad-hoc reviews of software design to ensure baseline mitigations for known risks.</description>
+    </item>
+    
+    <item>
+      <title>Defect Management</title>
+      <link>https://owaspsamm.org/core/implementation/i-defect-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/implementation/i-defect-management/</guid>
+      <description>Overview     A: Defect Tracking (Flaws/Bugs/Process) B: Metrics and Feedback/Learning     Maturity 1 - All defects are tracked within each project Track all defects Calculate and share basic metrics, such as total counts   Maturity 2 - Defect tracking used to influence the deployment process Assign SLA based on security rating of the defect Calculate more advanced metrics that include new issue velocity, remediation speed metrics, and trends.</description>
+    </item>
+    
+    <item>
+      <title>Education &amp; Guidance</title>
+      <link>https://owaspsamm.org/core/governance/g-education-guidance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/governance/g-education-guidance/</guid>
+      <description>Overview The Education &amp;amp; Guidance (EG) Practice is focused on arming personnel involved in the software lifecycle with knowledge and resources to design, develop, and deploy secure software. With improved access to information, project teams will be better able to proactively identify and mitigate the specific security risks that apply to their organization.
+One major theme for improvement across the Objectives is providing training for employees, either through instructor-led sessions or computer-based modules.</description>
+    </item>
+    
+    <item>
+      <title>Environment Management</title>
+      <link>https://owaspsamm.org/core/operations/o-environment-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/operations/o-environment-management/</guid>
+      <description>Overview     A: Configuration Hardening B: Patching (and Updating)     Maturity 1 - Best-effort patching and hardening Prioritized best-effort hardening Prioritized best-effort patching   Maturity 2 - Formal process with baselines in place Hardening baseline and guidelines available Formal process covering the full stack   Maturity 3 - Conformity with continuously improving process enforced Detection and handling of non-conformities Consolidated update process with SLA and reporting    A: Configuration Hardening Maturity 1 Activity On the first maturity level, you&amp;rsquo;ve recognized the importancy of configuration hardening of third party components across the full stack, defined the relevant scope for this activity and have also provably taken the first steps in this activity.</description>
+    </item>
+    
+    <item>
+      <title>Incident Management</title>
+      <link>https://owaspsamm.org/core/operations/o-incident-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/operations/o-incident-management/</guid>
+      <description>Overview     A: Incident Detection B: Incident Response     Maturity 1 - Best-effort incident detection and handling Best-effort incident detection with available log data Defined high-level incident response strategy   Maturity 2 - Formal incident management process in place Automated log evaluation driven by process Root Cause Analysis with feedback loop   Maturity 3 - Mature incident management Reliable timely incident detection Proactive incident + emergency exercises    A: Incident Detection Maturity 1 Activity On the first level, log data (e.</description>
+    </item>
+    
+    <item>
+      <title>Operational Management</title>
+      <link>https://owaspsamm.org/core/operations/o-operational-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/operations/o-operational-management/</guid>
+      <description>Overview The Operational Management practice focuses on activities to ensure security is maintained throughout operational support functions. Although these functions are not performed directly by an application, the overall security of the application and its data is dependent on their proper performance. All of the protections built into an application can be rendered irrelevant by deploying the application on an unsupported operating system with unpatched vulnerabilities, or failing to store backup media securely.</description>
+    </item>
+    
+    <item>
+      <title>Policy &amp; Compliance</title>
+      <link>https://owaspsamm.org/core/governance/g-policy-compliance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/governance/g-policy-compliance/</guid>
+      <description>Proposed Overview The Policy &amp;amp; Compliance (PC) Practice is focused on understanding and meeting external legal and regulatory requirements while also driving internal security standards to ensure compliance in a way that’s aligned with the business purpose of the organization.
+A driving theme for improvement within this Practice is focused on describing organization&amp;rsquo;s standards and 3rd party obligations as application requirements, enabling efficient and automated audits that may be leveraged within the SDLC and continuously demonstrate that all expectations are being met.</description>
+    </item>
+    
+    <item>
+      <title>Requirements Driven Testing</title>
+      <link>https://owaspsamm.org/core/verification/v-requirements-driven-testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/verification/v-requirements-driven-testing/</guid>
+      <description>Overview     A: Control Verification B: Misuse/Abuse Testing     Maturity 1 - Opportunistically find basic vulnerabilities and other security issues. Test for standard security controls Perform security fuzzing testing   Maturity 2 - Perform implementation review to discover application-specific risks against the security requirements. Derive test cases from known security requirements Create and test abuse cases and business logic flaw test   Maturity 3 - Maintain the application security level after bug fixes, changes or during maintenance Perform regression testing (with security unit tests) Denial of service and security stress testing    Overview A: Control Verification &amp;lt;!</description>
+    </item>
+    
+    <item>
+      <title>Secure Build</title>
+      <link>https://owaspsamm.org/core/implementation/i-secure-build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/implementation/i-secure-build/</guid>
+      <description>Meta    Business Function Security Practice Assigned To % Complete     Implementation Secure Build Name (email) 0%    Overview     A: Build Process B: Software Supply Chain     Maturity 1 - Build process is repeatable and consistent The build process is defined and consistent. All application dependencies are identified and documented   Maturity 2 - Build process is optimized and fully integrated into the workflow The build process is fully automated and does not require intervention by the developer.</description>
+    </item>
+    
+    <item>
+      <title>Secure Deployment</title>
+      <link>https://owaspsamm.org/core/implementation/i-secure-deployment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/implementation/i-secure-deployment/</guid>
+      <description>Overview     A: Deployment Process B: Configurations/Secret Management     Maturity 1 - Deployment processes are fully documented Deployment is automated or done by someone other than the developer. Configuration files are versioned and protected   Maturity 2 - Deployment processes include security verification milestores Integration of security verification in deployment (e.g. binary static code analysis / AV scan) Configuration files do not contain unencrypted sensitive configuration information   Maturity 3 - Deployment process is fully automated and incorporates automated verification of all critical milestones Integrity of the code is verified prior to deployment Deployment process automatically generates / initializes credentials and authentication keys    A: Deployment Process Maturity 1 Activity Applications are deployed via automated processes, or manually by persons other than the developers.</description>
+    </item>
+    
+    <item>
+      <title>Security Architecture</title>
+      <link>https://owaspsamm.org/core/design/d-security-architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/design/d-security-architecture/</guid>
+      <description>Overview     A: Secure Architecture Design B: Technology Management     Maturity 1 - Insert consideration of proactive security guidance into the software design process. Use basic security principles Elicit technologies, frameworks and integrations within the overall solution   Maturity 2 - Direct the software design process toward known secure services and secure-by-default designs. Establish common design patterns and security solutions Standardize technologies and frameworks to be used throughout the different applications   Maturity 3 - Formally control the software design process and validate utilization of secure components.</description>
+    </item>
+    
+    <item>
+      <title>Security Requirements</title>
+      <link>https://owaspsamm.org/core/design/d-security-requirements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/design/d-security-requirements/</guid>
+      <description>This security practice focuses on security requirements that are important in the context of secure software. A first type of requirements deals with typical software-related requirements, to specify concrete objectives and expectations to protect the service and data that form part of the application. A second type of requirements deals with requirements that are relative to supplier companies that are part of the development context of the application, in particular for outsourced development.</description>
+    </item>
+    
+    <item>
+      <title>Security Testing</title>
+      <link>https://owaspsamm.org/core/verification/v-security-testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/verification/v-security-testing/</guid>
+      <description>Overview     A: Scalable Baseline B: Deep Understanding     Maturity 1 - Perform security testing (both manual and tool based) to discover security defects. Utilize automated security testing tools Perform manual security testing of high-risk components   Maturity 2 - Make security testing during development more complete and efficient through automation complemented with regular manual security penetration tests Employ application-specific security testing automation Conduct manual penetration testing   Maturity 3 - Embed security testing as part of the development and deployment processes.</description>
+    </item>
+    
+    <item>
+      <title>Strategy &amp; Metrics</title>
+      <link>https://owaspsamm.org/core/governance/g-strategy-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/governance/g-strategy-metrics/</guid>
+      <description>Proposed Overview     A: Create and Promote B: Measure and Improve     Maturity 1 - Identify objectives and means of measuring effectiveness of the security program Identify organisation drivers as they relate to the organization&amp;rsquo;s risk tolerance Define metrics with insight into the effectiveness and efficiency of the Application Security Program   Maturity 2 - Establish a unified strategic roadmap for software security within the organization.</description>
+    </item>
+    
+    <item>
+      <title>Threat Assessment</title>
+      <link>https://owaspsamm.org/core/design/d-threat-assessment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/design/d-threat-assessment/</guid>
+      <description>Overview The Threat Assessment (TA) practise is focused on accurately identifying and understanding potential attacks upon an organisation&amp;rsquo;s software in order to better understand the risks and facilitate risk management. Indeed, software assurance is all about identifying risks in applications and treating them accordingly.
+Risks to an application can be relative to the business of the application (think about business logic attacks) or to the technical setup of the application.</description>
+    </item>
+    
+  </channel>
+</rss>

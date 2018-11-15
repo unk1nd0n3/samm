@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <title>Environment Management - OWASP SAMM</title>
+  
+  <meta name="description" content="Overview     A: Configuration Hardening B: Patching (and Updating)     Maturity 1 - Best-effort patching and hardening Prioritized best-effort hardening Prioritized best-effort patching   Maturity 2 - Formal process with baselines in place Hardening baseline and guidelines available Formal process covering the full stack   Maturity 3 - Conformity with continuously improving process enforced Detection and handling of non-conformities Consolidated update process with SLA and reporting    A: Configuration Hardening Maturity 1 Activity On the first maturity level, you&rsquo;ve recognized the importancy of configuration hardening of third party components across the full stack, defined the relevant scope for this activity and have also provably taken the first steps in this activity.">
+  <meta name="author" content="">
+  
+  <link href="/css/semantic.min.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel="icon" href="/img/favicon.png">
+  
+  <meta name="generator" content="Hugo">
+  
+  <link rel="alternate" type="application/atom+xml" href="/index.xml" title="OWASP SAMM">
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127457120-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127457120-1');
+  </script>
+</head>
+<body class="single">
+  <header class="ui container">
+    <h1 class="ui header">
+      <div class="content">
+        OWASP SAMM
+        <div class="sub header">Software Assurance Maturity Model</div>
+      </div>
+    </h1>
+  </header>
+  <main class="ui container">
+
+
+<h1 class="ui huge dividing header">
+  Environment Management
+</h1>
+
+<div class="ui buttons">
+  <a href="/" class="ui green button"><i class="hand point left icon"></i> Back</button>
+  <a href="https://github.com/OWASP/samm/edit/master/v2.0/beta/core/operations/o-environment-management.md" class="ui blue button"><i class="pencil icon"></i> Edit this page</a>
+</div>
+
+<div class="ui hidden divider"></div>
+
+<div class="ui large labels">
+  <div class="ui green label">
+    Business function
+    <div class="detail">Operations</div>
+  </div>
+  <div class="ui orange label">
+    Assigned to
+    <div class="detail">Daniel (dan.kefer@gmail.com)</div>
+  </div>
+  
+  <div class="ui label">
+    Progress
+    <div class="detail"><span class="donut">70/100</span> 70%</div>
+  </div>
+  
+</div>
+
+
+
+<h1 id="overview">Overview</h1>
+
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">A: Configuration Hardening</th>
+<th>B: Patching (and Updating)</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">Maturity 1 - Best-effort patching and hardening</td>
+<td align="left">Prioritized best-effort hardening</td>
+<td>Prioritized best-effort patching</td>
+</tr>
+
+<tr>
+<td align="left">Maturity 2 - Formal process with baselines in place</td>
+<td align="left">Hardening baseline and guidelines available</td>
+<td>Formal process covering the full stack</td>
+</tr>
+
+<tr>
+<td align="left">Maturity 3 - Conformity with continuously improving process enforced</td>
+<td align="left">Detection and handling of non-conformities</td>
+<td>Consolidated update process with SLA and reporting</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="a-configuration-hardening">A: Configuration Hardening</h1>
+
+<h2 id="maturity-1">Maturity 1</h2>
+
+<h3 id="activity">Activity</h3>
+
+<p>On the first maturity level, you&rsquo;ve recognized the importancy of configuration hardening of third party components across the full stack, defined the relevant scope for this activity and have also provably taken the first steps in this activity. The responsibility for hardening of the particular components is known and acknowledged.</p>
+
+<p>You are actively working with publicly available information sources (open source projects, vendor documentation, blog articles&hellip;), increasing your know-how from those and implementing at least &ldquo;low hanging fruits&rdquo;.</p>
+
+<h3 id="maturity-questions">Maturity Questions</h3>
+
+<h4 id="q-1">Q 1</h4>
+
+<p>Has the scope relevant for this activity been defined and known in general?</p>
+
+<p><strong>Answer Options</strong>
+SAMMQA-C:</p>
+
+<ul>
+<li>No</li>
+<li>Yes, a small percentage are/do</li>
+<li>Yes, at least half of them are/do</li>
+<li>Yes, the majority of them are/do</li>
+</ul>
+
+<h4 id="q-2">Q 2</h4>
+
+<p>Is the configuration of relevant used third party components being actively hardened?</p>
+
+<p><strong>Answer Options</strong>
+SAMMQA-C:</p>
+
+<ul>
+<li>No</li>
+<li>Yes, a small percentage are/do</li>
+<li>Yes, at least half of them are/do</li>
+<li>Yes, the majority of them are/do</li>
+</ul>
+
+<h3 id="notes">Notes</h3>
+
+<p>description more L2 aligned, versus best-effort
+full stack - too &ldquo;devopsy&rdquo;?
+definition = configuration hardening?
+L1 = identify what matters to protect your environment and what is missing and prioritized best-effort hardening</p>
+
+<h4 id="guidance">Guidance</h4>
+
+<h2 id="maturity-2">Maturity 2</h2>
+
+<h3 id="activity-1">Activity</h3>
+
+<p>Within the scope relevant for this activity, you have defined hardening baselines for particular components used. These baselines have been communicated across the affected teams.</p>
+
+<p>The baselines have an owner who&rsquo;s responsible for keeping them up-to-date (e.g. if new best practices / features are available with new versions) and adapting them according to trustworthy sources. Newly implemented systems are part of the hardening process.</p>
+
+<h3 id="maturity-questions-1">Maturity Questions</h3>
+
+<h4 id="q-1-1">Q 1</h4>
+
+<p>Are hardening baselines for the relevant used 3rd party components available?</p>
+
+<p><strong>Answer Options</strong>
+SAMMQA-C:</p>
+
+<ul>
+<li>No</li>
+<li>Yes, a small percentage are/do</li>
+<li>Yes, at least half of them are/do</li>
+<li>Yes, the majority of them are/do</li>
+</ul>
+
+<h4 id="q-2-1">Q 2</h4>
+
+<p>Are hardening baselines implemented for all relevant components?</p>
+
+<p><strong>Answer Options</strong>
+SAMMQA-C:</p>
+
+<ul>
+<li>No</li>
+<li>Yes, a small percentage are/do</li>
+<li>Yes, at least half of them are/do</li>
+<li>Yes, the majority of them are/do</li>
+</ul>
+
+<h3 id="notes-1">Notes</h3>
+
+<p>standards in place
+standard way if deploying the baselines</p>
+
+<ul>
+<li>Consider automated tools / solutions for hardening? Not all software can be hardened automatically.</li>
+<li>Where it makes sense (e.g. software with multiple instances), create a golden image/configuration that can be deployed widely</li>
+</ul>
+
+<h4 id="guidance-1">Guidance</h4>
+
+<h2 id="maturity-3">Maturity 3</h2>
+
+<h3 id="activity-2">Activity</h3>
+
+<p>On the highest level, conformity with the hardening baselines is reliably tracked and evaluated. Nonconformities are handled as security findings, triaged and handled according to rules and SLAs stemming from the defect management practice.</p>
+
+<p>Component update process includes verification of validity of the current hardening baselines. Relevant changes are incorporated in the baselines as well as in the auditing measures.</p>
+
+<p>The continuous improvement process for the baselines is periodically audited and the resulting findings are acted upon.</p>
+
+<h3 id="maturity-questions-2">Maturity Questions</h3>
+
+<h4 id="q-1-2">Q 1</h4>
+
+<p>Does the update process include verification and update of the current hardening baselines?</p>
+
+<p><strong>Answer Options</strong>
+SAMMQA-G:</p>
+
+<ul>
+<li>No</li>
+<li>Yes, localized to business areas</li>
+<li>Yes, across the organization</li>
+<li>Yes, across the organization and required</li>
+</ul>
+
+<h4 id="q-2-2">Q 2</h4>
+
+<p>Is the continuous improvement of the hardening baselines regularly audited?</p>
+
+<p><strong>Answer Options</strong>
+SAMMQA-G:</p>
+
+<ul>
+<li>No</li>
+<li>Yes, localized to business areas</li>
+<li>Yes, across the organization</li>
+<li>Yes, across the organization and required</li>
+</ul>
+
+<h3 id="notes-2">Notes</h3>
+
+<p>non-conformities / self-healing (overwriting)</p>
+
+<h4 id="guidance-2">Guidance</h4>
+
+<h1 id="b-patching-and-updating">B: Patching (and Updating)</h1>
+
+<h2 id="maturity-1-1">Maturity 1</h2>
+
+<h3 id="activity-3">Activity</h3>
+
+<p>On the first maturity level, you&rsquo;ve identified applications and 3rd party application components which need to be updated/ patched, nevertheless if it&rsquo;s the underlying operating system, application server or 3rd party code library.</p>
+
+<p>Patching activities are carried out according to best-effort, however you have defined the update process at least on a high level. At least the process responsible for the particular components is known and cooperation between multiple teams is ensured if necessary and patching can be carried out anytime in case of need (e.g. exploit for a 3rd party component publicly available).</p>
+
+<p>You&rsquo;re able to find out reasonably quickly the used versions of all components in order to evaluate whether you&rsquo;re affected by a particular public security vulnerability or not.</p>
+
+<h3 id="maturity-questions-3">Maturity Questions</h3>
+
+<h5 id="q-1-3">Q 1</h5>
+
+<p>Have all used relevant components been patched in the last year?</p>
+
+<p><strong>Answer Options</strong>
+SAMMQA-C:</p>
+
+<ul>
+<li>No</li>
+<li>Yes, a small percentage are/do</li>
+<li>Yes, at least half of them are/do</li>
+<li>Yes, the majority of them are/do</li>
+</ul>
+
+<h5 id="q-2-3">Q 2</h5>
+
+<p>Are you able to patch a newly released publicly known critical vulnerability in a reasonable time frame?</p>
+
+<p><strong>Answer Options</strong>
+SAMMQA-C:</p>
+
+<ul>
+<li>No</li>
+<li>Yes, a small percentage are/do</li>
+<li>Yes, at least half of them are/do</li>
+<li>Yes, the majority of them are/do</li>
+</ul>
+
+<h3 id="notes-3">Notes</h3>
+
+<p>activities would be different for container based deployments
+implictly assumes you have an overview of what needs to be patched.
+coverage can be measured with the Q&amp;As
+use maintenance windows to oppurtunistically patch/upgrade software
+you know what patches are missing
+identify patching dependencies
+L1 - identify what matters and what is missing and prioritized best-effort patching
+L2 - strategy , process , calendar
+L3 - SLA / reporting</p>
+
+<p>From SAMM Summit&hellip;</p>
+
+<p>Reference to software supply chain</p>
+
+<p>Reference to change management</p>
+
+<p>How do you deal with zero days / vulnerabilities without patches?</p>
+
+<p>Validating the patch in terms of integrity</p>
+
+<p>Checking the patch won&rsquo;t break your application / system</p>
+
+<h4 id="guidance-3">Guidance</h4>
+
+<h2 id="maturity-2-1">Maturity 2</h2>
+
+<h3 id="activity-4">Activity</h3>
+
+<p>Update process is defined and documented across the full stack. You don&rsquo;t only rely on available patches provided by vendors; external sources are also used systematically in order to gather intelligence about zero day vulnerabilities, so that appropriate risk mitigation steps can be carried out.</p>
+
+<p>There is a guidance for prioritization of particular updates, let it be the criticality of the application, severity of security issues or whichever other concerns which are important to your organization.</p>
+
+<p>All newly implemented applications are a part of the defined process. Checking for the update process conformity is also a part of the quality assurance activities.</p>
+
+<h3 id="maturity-questions-4">Maturity Questions</h3>
+
+<h4 id="q-1-4">Q 1</h4>
+
+<p>Is the patching process including prioritization documented for the whole stack?</p>
+
+<p><strong>Answer Options</strong>
+SAMMQA-G:</p>
+
+<ul>
+<li>No</li>
+<li>Yes, localized to business areas</li>
+<li>Yes, across the organization</li>
+<li>Yes, across the organization and required</li>
+</ul>
+
+<h4 id="q-2-4">Q 2</h4>
+
+<p>Is external intelligence systematically used in order to find information about new zero-day vulnerabilities?</p>
+
+<p><strong>Answer Options</strong>
+SAMMQA-G:</p>
+
+<ul>
+<li>No</li>
+<li>Yes, localized to business areas</li>
+<li>Yes, across the organization</li>
+<li>Yes, across the organization and required</li>
+</ul>
+
+<h3 id="notes-4">Notes</h3>
+
+<p>baseline or target levels defined
+patch/upgrade calendar followed
+manage process information (e.g. gap)</p>
+
+<ul>
+<li>Mention a patch schedule - structured approach. Take into account when the vendor releases patches. Regular patch windows - times to patch unforeseen patches / out-of-band patches.</li>
+<li>Move conformity to level 3?</li>
+</ul>
+
+<h4 id="guidance-4">Guidance</h4>
+
+<h2 id="maturity-3-1">Maturity 3</h2>
+
+<h3 id="activity-5">Activity</h3>
+
+<p>On the third level, you have a very good insight, such as dashboard, in the patching strategy all over the organization and full stack. Missing updates are triaged and handled according to rules and SLAs stemming from the defect management practice. It is guaranteed that patching can take place anytime so that SLAs can be adhered to.</p>
+
+<p>If there are applications with worse patch level, the situation is analyzed and corrective actions are performed if reasonable.</p>
+
+<p>Continuous process improvement is audited regularly.</p>
+
+<h3 id="maturity-questions-5">Maturity Questions</h3>
+
+<h4 id="q-1-5">Q 1</h4>
+
+<p>Are you periodically evaluating the patch level across the whole stack and performing corrective actions?</p>
+
+<p><strong>Answer Options</strong>
+SAMMQA-F:</p>
+
+<ul>
+<li>No</li>
+<li>Yes, teams write/run their own</li>
+<li>Yes, there is a standard set</li>
+<li>Yes, the standard set is integrated</li>
+</ul>
+
+<h4 id="q-2-5">Q 2</h4>
+
+<p>Is process improvement evaluated regularly?</p>
+
+<p><strong>Answer Options</strong>
+SAMMQA-F:</p>
+
+<ul>
+<li>No</li>
+<li>Yes, teams write/run their own</li>
+<li>Yes, there is a standard set</li>
+<li>Yes, the standard set is integrated</li>
+</ul>
+
+<h3 id="notes-5">Notes</h3>
+
+<ul>
+<li></li>
+</ul>
+
+<h4 id="guidance-5">Guidance</h4>
+
+
+<div class="ui section divider"></div>
+<footer class="ui container footer">
+  <div class="ui stackable grid">
+    <div class="ui three wide column">
+      <a href="https://www.owasp.org/"><img class="ui fluid image" src="/img/owasp.png" /></a>
+    </div>
+    <div class="ui thirteen wide column">
+      <h3 class="ui blue sub header">This is an OWASP Project</h3>
+      <p>OWASP is an international organization and the OWASP Foundation supports OWASP efforts around the world. OWASP is an open community dedicated to enabling organizations to conceive, develop, acquire, operate, and maintain applications that can be trusted. All of the OWASP tools, documents, forums, and chapters are free and open to anyone interested in improving application security. We advocate approaching application security as a people, process, and technology problem because the most effective approaches to application security include improvements in all of these areas. We can be found at <a href="https://www.owasp.org/">https://www.owasp.org/</a>.</p>
+    </div>
+  </div>
+  <div class="ui stackable grid">
+    <div class="ui three wide column">
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img class="ui fluid image" src="/img/by-sa.png" /></a>
+    </div>
+    <div class="ui thirteen wide column">
+      <h3 class="ui blue sub header">CC BY-SA 4.0</h3>
+      <p>This work is licensed under the Creative Commons Attribution-Share Alike 4.0 License. To view a copy of this license, visit <a href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a>.</p>
+    </div>
+  </div>
+</footer>
+<script src="/js/semantic.min.js" data-no-instant></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" data-no-instant></script>
+<script src="/js/jquery.peity.min.js" data-no-instant></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.donut').peity('donut');
+  });
+</script>
+</body>
+</html>
+
